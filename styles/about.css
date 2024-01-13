@@ -1,0 +1,61 @@
+.about{
+    grid-column: 1/-1;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:10px;
+
+    background-color: var(--color-2);
+    background-image: url(../SVG/small_about.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 1rem 15px;
+
+}
+.about .about_title{
+    color: var(--color-4);
+    
+    grid-column: 1/-1;
+    margin-bottom: 1rem;
+}
+
+.about .about_paragraph{
+    color: var(--color-4);
+    grid-column: 1/-1;
+    margin-bottom: 1rem;
+    font-size: clamp(1rem, 5vw, 1.6rem);
+}
+.about_strong{
+    background-color: var(--color-3);
+    color: var(--color-1);
+    font-size: clamp(1.1rem, 5vw, 1.7rem);
+    padding: 3px;
+    border-radius: 3px;
+}
+
+@media (min-width: 601px) {
+    .about{
+        grid-template-columns: repeat(12, 1fr);
+
+        background-image: url(../SVG/about.svg);
+        background-size: contain;
+        padding: 2rem 40px;
+    }
+
+    .about .about_paragraph{
+        grid-column: 2/12;
+        font-size: clamp(0.7rem, 3vw, 1.5rem);
+        margin-bottom: 1.5rem;
+    }
+    .about_strong{
+        font-size: clamp(0.8rem, 3vw, 1.6rem);
+    }
+
+}
+
+@media (min-width: 1025px) {
+    .about{
+        padding: 3rem 40px;
+    }
+}
