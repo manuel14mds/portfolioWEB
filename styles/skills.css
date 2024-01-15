@@ -1,6 +1,4 @@
 .skills{
-    height: 300px;
-
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
@@ -13,6 +11,7 @@
     display: flex;
     align-items: center;
     gap: 7px;
+
 }
 .skills_title{
     color: var(--color-4);
@@ -33,29 +32,119 @@
 }
 
 .skills .tech_container{
-    padding: 0;
     grid-column: 1/-1;
-
-    display: grid;
-    grid-template-columns:  repeat(1fr, 3);
-    gap: 1rem;
-
-    border: 1px solid black;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:2rem;
+    
+    padding: 0;
+    margin: 16px 0;
 }
 
 .skills .tech_container .tech{
-    background-color: aqua;
-    width: 100%;
+    width: clamp(65px, 20vw, 150px);
+    transition: transform 0.4s ease;
+    transform: scale(1);
+    
     list-style: none;
-    grid-column: 1/2;
-
+    aspect-ratio: 1/1;
+    
+    display: grid;
+    place-items: center;
+    
+}
+.skills .tech_container .tech:hover{
+    transform: scale(0.95)
 }
 
 .skills .tech_container .tech .tech_img{
-    background-color: white;
-    width: 20px;
-    height: 20px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    width: clamp(40px, 12vw, 80px);
+    aspect-ratio: 1/1;
 }
 .skills .tech_container .tech .tech_name{
     color: var(--color-4);
+}
+
+.skills .tech_container .tech .tech_one{
+    background-image: url(../SVG/techs/react.svg);
+}
+.skills .tech_container .tech .tech_two{
+    background-image: url(../SVG/techs/angular.svg);
+}
+.skills .tech_container .tech .tech_tree{
+    background-image: url(../SVG/techs/javascript.svg);
+}
+.skills .tech_container .tech .tech_four{
+    background-image: url(../SVG/techs/node.svg);
+}
+.skills .tech_container .tech .tech_five{
+    background-image: url(../SVG/techs/express.svg);
+}
+.skills .tech_container .tech .tech_six{
+    background-image: url(../SVG/techs/typescript.svg);
+}
+.skills .tech_container .tech .tech_seven{
+    background-image: url(../SVG/techs/html.svg);
+}
+.skills .tech_container .tech .tech_eight{
+    background-image: url(../SVG/techs/css.svg);
+}
+.skills .tech_container .tech .tech_nine{
+    background-image: url(../SVG/techs/aws.svg);
+}
+.skills .tech_container .tech .tech_ten{
+    background-image: url(../SVG/techs/mongodb.svg);
+}
+.skills .tech_container .tech .tech_eleven{
+    background-image: url(../SVG/techs/firebase.svg);
+}
+.skills .tech_container .tech .tech_twelve{
+    background-image: url(../SVG/techs/mysql.svg);
+}
+
+
+
+@media (min-width: 601px) {
+    .skills{
+
+        grid-template-columns: repeat(12, 1fr);
+        padding: 2rem 40px;
+        
+    }
+    .skills .skills_title_box{
+        gap: 10px;
+    }
+    .skills .skills_title_box .skills_info{
+        height: 32px;
+        width: 32px;
+    }
+    .skills .tech_container{
+        grid-column: 2/12;
+        gap: 3rem;
+        transition-duration: 0.3s transform;
+        padding: 20px 0;
+    }
+    .skills .tech_container .tech{
+        width: clamp(15%, 17%, 20%);
+    
+    }
+    .skills .tech_container .tech .tech_img{
+        width: 45%;
+    }
+    .skills .tech_container .tech .tech_name{
+        font-size: 1rem;
+    }
+}
+@media (min-width: 900px) {
+    .skills .tech_container .tech .tech_name{
+        font-size: 1.5rem;
+    }
+    
 }
