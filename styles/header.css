@@ -6,12 +6,12 @@
     margin: 0 auto;
     width: 100%;
     max-width: 1200px;
-    overflow: hidden;
 }
 .nav{
     --state-close: scale(0);
     --state-hamburger: scale(1);
     --state-menu: translate(-100%);
+    --scroll-page: scroll;
 
     padding: 15px 0;
     display: grid;
@@ -26,6 +26,8 @@
     --state-close: scale(1);
     --state-hamburger: scale(0);
     --scroll-page: hidden;
+
+
 }
 
 .close_icon_img{
