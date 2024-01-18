@@ -1,0 +1,249 @@
+.projects{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+    background-color: var(--color-4);
+    padding: 1rem 15px;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.project_card{
+    color: var(--color-4);
+}
+.projects .projects_title_box{
+    grid-column: 1/-1;
+
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: 0.5rem 0;
+}
+.projects .projects_title_box .projects_title{
+    color: var(--color-2);
+}
+
+.projects_info {
+    background-image: url(../SVG/infoTwo.svg);
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+}
+.projects_info:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.projects .projects_box{
+    grid-column: 1/-1;
+
+    display:grid;
+    grid-template-columns: repeat(8, 1fr);
+
+    width: 100%;
+}
+
+.projects .projects_box .project_card{
+    grid-column: 2/8;
+    background-color: var(--color-1);
+    border-radius: 7px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+.projects .projects_box .project_card:hover{
+    box-shadow: 0px 0px 10px var(--color-3);
+
+}
+.projects .projects_box .project_card .card_image{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.projects .projects_box .project_card .card_title{
+    margin: 5%;
+}
+.projects .projects_box .project_card .card_text_box{
+    margin: 2% 5%;
+    height: 70px;
+    overflow-y: scroll;
+}
+.projects .projects_box .project_card .card_text_box .card_description{
+    font-size: 60%;
+    text-wrap: pretty;
+    margin-bottom: 5px;
+}
+.projects .projects_box .project_card .card_techs_box{
+    margin: 2% 5%;
+}
+.projects .projects_box .project_card .card_techs_box .card_tech{
+    background-color: var(--color-3);
+    color: var(--color-1);
+    padding: 3px 7px;
+    border-radius: 3px;
+    margin-right: 10px;
+    font-size: 7px;
+}
+.projects .projects_box .project_card .card_links_box{
+    margin: 2% 5% 5% 5%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+
+}
+.projects .projects_box .project_card .card_links_box .card_link{
+    display: block;
+}
+.projects .projects_box .project_card .card_links_box .card_link .card_link_icon{
+    width: 20px;
+    aspect-ratio: 1/1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.projects .projects_box .project_card .card_links_box .card_link .link_icon{
+    background-image: url(../SVG/link.svg);
+}
+.projects .projects_box .project_card .card_links_box .card_link .github_icon{
+    background-image: url(../SVG/github.svg);
+}
+.projects .projects_box .project_card .card_links_box .card_link .info_icon{
+    background-image: url(../SVG/info.svg);
+}
+
+@media (min-width: 395px) {
+    .projects .projects_box .project_card .card_text_box{
+        height: 100px;
+    }
+    .projects .projects_box .project_card .card_text_box .card_description{
+        font-size: 79%;
+    }
+    .projects .projects_box .project_card .card_techs_box .card_tech{
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-right: 10px;
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 601px) {
+    .projects {
+        grid-template-columns: repeat(12, 1fr);
+        padding: 2rem 40px;
+        height: auto;
+    }
+    .projects .projects_box{
+        --filter-img: grayscale(100%);
+        
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto); 
+        gap: 5%; 
+        
+        height: auto;
+        padding-bottom: 2rem;
+
+    }
+    .projects .projects_box .project_card{
+        grid-column: auto;
+        height: max-content;
+        margin: 0;
+        transition: transform 0.6s ease;
+    }
+    .projects .projects_box .project_card:hover{
+        --filter-img: grayscale(0%);
+        transform: scale(1.05);
+        
+    }
+    .projects .projects_box .project_card .card_image{
+        filter: var(--filter-img);
+    }
+    
+    .projects_info {
+        height: 32px;
+        width: 32px;
+    }
+    
+    .projects .projects_title_box {
+        gap: 10px;
+    }
+    .projects .projects_box .project_card .card_title{
+        font-size: 0.8rem;
+    }
+    .projects .projects_box .project_card .card_text_box{
+        height: 50px;
+    }
+    .projects .projects_box .project_card .card_text_box .card_description{
+        font-size: 49%;
+    }
+
+    .projects .projects_box .project_card .card_techs_box .card_tech{
+        padding: 3px 7px;
+        border-radius: 3px;
+        margin-right: 0px;
+        font-size: 7px;
+    }
+
+    .projects .projects_box .project_card .card_links_box .card_link .card_link_icon{
+        width: 14px;
+    }
+    
+}
+
+@media (min-width: 910px) {
+    .projects .projects_box{
+        gap: 7%; 
+        padding-bottom: 2.5rem;
+    }
+
+    .projects .projects_box .project_card .card_title{
+        font-size: 1.2rem;
+    }
+    .projects .projects_box .project_card .card_text_box{
+        height: 80px;
+    }
+    .projects .projects_box .project_card .card_text_box .card_description{
+        font-size: 0.9rem;
+    }
+
+    .projects .projects_box .project_card .card_techs_box .card_tech{
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-right: 7px;
+        font-size: 11px;
+    }
+
+    .projects .projects_box .project_card .card_links_box .card_link .card_link_icon{
+        width: 20px;
+    }
+
+}
+/* .project_one{ 
+    grid-column: 1/3;
+    grid-row: 1/1;
+}
+.project_two{ 
+    grid-column: 3/5;
+    grid-row: 1/1;
+}
+.project_tree{ 
+    grid-column: 5/9;
+    grid-row: 1/1;
+}
+.project_four{
+    grid-column: 1/3;
+    grid-row: 2/2;
+    
+}
+.project_five{
+    grid-column: 3/5;
+    grid-row: 2/2;
+}
+.project_six{
+    grid-column: 5/9;
+    grid-row: 2/2;
+} */

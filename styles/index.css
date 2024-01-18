@@ -13,8 +13,6 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     background-color: var(--color-1);
-
-    overflow-y: var(--scroll-page, scroll);
 }
 .main{
     grid-column: 1/-1;
