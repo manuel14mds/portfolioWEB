@@ -1,8 +1,14 @@
-:root {
+/* :root {
     --color-1: #FEF6E6;
     --color-2: #E4D3B8;
     --color-3: #81A68C;
     --color-4: #374259;
+} */
+:root {
+    --color-1: #FEF6E6;
+    --color-2: #E4D3B8;
+    --color-3: #81A68C;
+    --color-4: #2a3242;
 }
 *{
     margin: 0;
@@ -10,29 +16,29 @@
     scroll-behavior: smooth;
 }
 body {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
     background-color: var(--color-1);
 }
 .main{
-    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 .title{
     font-size: clamp(2rem, 8vw, 3rem);
 }
 section{
     margin-top: 1rem;
+    grid-column: 1/-1;
 }
 
 
 @media (min-width: 601px) {
-    body {
+    main {
         grid-template-columns: repeat(12, 1fr);
     }
 }
 
 @media (min-width: 1080px) {
-    body {
+    main {
         grid-template-columns: repeat(12, 1fr);
         max-width: 1280px;
         margin: 0 auto;

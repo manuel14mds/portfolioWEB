@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./styles/about.css">
     <link rel="stylesheet" href="./styles/skills.css">
     <link rel="stylesheet" href="./styles/projects.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 </head>
 
 <body>
@@ -25,10 +26,10 @@
                     <a href="#skills" class="nav_link">Skills</a>
                 </li>
                 <li class="nav_item">
-                    <a href="#" class="nav_link">Projects</a>
+                    <a href="#projects" class="nav_link">Projects</a>
                 </li>
                 <li class="nav_item">
-                    <a href="#" class="nav_link">Contact</a>
+                    <a href="#contact" class="nav_link">Contact</a>
                 </li>
                 <button class="nav_item nav_resume_btn">
                         <label href="#" class="nav_link">Resume</label>
@@ -83,10 +84,12 @@
                 dynamic organization in the IT sector.</p>
         </section>
 
-        <section class="skills" id="skills">
+        <section class="skills" id="skills" role="region" aria-labelledby="skills-heading">
             <div class="skills_title_box">
                 <h2 class="skills_title title">Skills</h2>
-                <button class="skills_info"></button>
+                <button class="skills_info">
+                    <span class="visually-hidden-btn">Información</span>
+                </button>
             </div>
             
             <ul class="tech_container">
@@ -141,10 +144,12 @@
             </ul>
         </section>
 
-        <section class="projects">
+        <section class="projects" id="projects" role="region" aria-labelledby="projects-heading">
             <div class="projects_title_box">
                 <h2 class="projects_title title">Projects</h2>
-                <button class="projects_info"></button>
+                <button class="projects_info">
+                    <span class="visually-hidden-btn">Información</span>
+                </button>
             </div>
 
             <div class="projects_box">
@@ -168,12 +173,15 @@
                     <div class="card_links_box">
                         <a href="#" class="card_link" target="_blank">
                             <div class="card_link_icon link_icon"></div>
+                            <span class="visually-hidden-btn">link</span>
                         </a>
                         <a href="#" class="card_link" target="_blank">
                             <div class="card_link_icon github_icon"></div>
+                            <span class="visually-hidden-btn">github</span>
                         </a>
                         <a href="#" class="card_link" target="_blank">
                             <div class="card_link_icon info_icon"></div>
+                            <span class="visually-hidden-btn">info</span>
                         </a>
                     </div>
                 </div>
@@ -329,8 +337,43 @@
         </section>
 
     </main>
-    <footer class="footer">
+    <footer>
+        <div class="contact" id="contact" role="region">
+            <form action="">
+                <label for="name" class="visually-hidden">Name</label>
+                <input id="name" type="text" class="input_name" placeholder="Name/Company">
 
+                <label for="email" class="visually-hidden">Email</label>
+                <input id="email" type="text" class="input_email" placeholder="Your Email Address">
+
+                <label for="about_input" class="visually-hidden">About</label>
+                <input id="about_input" type="text" class="input_about" placeholder="About">
+                
+                <label for="textarea" class="visually-hidden">Message</label>
+                <textarea name="" id="textarea"  rows="5" placeholder="Message"></textarea>
+                <button class="send_btn">send email</button>
+            </form>
+            <div class="social_container" role="group">
+                <div class="email">
+                    <div class="email_logo"></div>
+                    <span>manuel14mds@gmail.com</span>
+                    <button class="copy_btn">copy</button>
+                </div>
+                <a class="github">
+                    <div class="github_logo"></div>
+                    <span>Github Profile</span>
+                </a>
+                <a class="linkedin">
+                    <div class="linkedin_logo"></div>
+                    <span>LinkedIn Profile</span>
+                </a>
+                <button class="see_resume">See Resume</button>
+            </div>
+            <div class="footer" role="banner">
+                <h4>Manuel Florez</h4>
+                <small>updated January 2024</small>
+            </div>
+        </div>
     </footer>
 
     <script src="./scripts/nav.js"></script>

@@ -1,0 +1,195 @@
+footer{
+    background-color: var(--color-3);
+    color: var(--color-4);
+    width: 100%;
+    margin-top: 2rem;
+    padding: 50px 15px;
+}
+
+.contact{
+    max-width: 1280px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+form{
+    grid-column: 1/-1;
+    margin-bottom: 3rem;
+}
+form input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5px;
+    background-color: var(--color-1);
+    border-radius: 5px;
+}
+form input::placeholder{
+    color: var(--color-4);
+}
+form input:focus{
+    border: 2px solid var(--color-4);
+    outline: none;
+    font-size: 0.8rem;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+form textarea{
+    width: 100%;
+    color: var(--color-4);
+    background-color: var(--color-1);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+form textarea:focus{
+    border: 2px solid var(--color-4);
+    outline: none;
+}
+form .send_btn{
+    background-color: var(--color-4);
+    color: var(--color-1);
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: transparent ;
+}
+form .send_btn:hover{
+    background-color: var(--color-5);
+    border: 1px solid var(--color-4);
+    color: var(--color-4);
+}
+.social_container{
+    grid-column: 1/-1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 3rem;
+}
+.social_container .email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.social_container .email .email_logo{
+    background-image: url(../SVG/email.svg);
+    background-size: contain;
+    width: 25px;
+    aspect-ratio: 1/1;
+}
+.social_container .email .copy_btn{
+    background-color: var(--color-4);
+    color: var(--color-1);
+    border-radius: 5px;
+    border: 1px solid var(--color-4);
+    padding: 5px 10px;
+}
+.social_container .email .copy_btn:hover{
+    background-color: var(--color-5);
+    color: var(--color-4);
+}
+.social_container .github{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+.social_container .github:hover{
+    transform: scale(1.05);
+}
+.social_container .github .github_logo{
+    background-image: url(../SVG/github.svg);
+    background-size: contain;
+    width: 25px;
+    aspect-ratio: 1/1;
+}
+.social_container .linkedin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+.social_container .linkedin:hover{
+    transform: scale(1.05);
+}
+.social_container .linkedin .linkedin_logo{
+    background-image: url(../SVG/linkedin.svg);
+    background-size: contain;
+    width: 25px;
+    aspect-ratio: 1/1;
+}
+
+.social_container .see_resume{
+    background-color: var(--color-2);
+    color: var(--color-4);
+    border-color: transparent;
+    width: 160px;
+    height: 50px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    animation: pulse 4s infinite ease-in-out;
+}
+.social_container .see_resume:hover{
+    border: 2px solid var(--color-4);
+    animation-play-state: paused;
+}
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+.footer{
+    grid-column: 1/-1;
+    
+    display: grid;
+    place-items: center;
+}
+.footer h4{
+    font-size: 2rem;
+}
+@media (min-width: 601px) {
+    .contact{
+        grid-template-columns: repeat(12, 1fr);
+        gap: 4%;
+    }
+    form{
+        grid-column: 1/6;
+    }
+    .social_container{
+        grid-column: 7/13;
+
+    }
+    footer{
+        padding: 50px 40px;
+    }
+    .footer h4{
+        font-size: 3.5rem;
+    }
+}
+@media (min-width: 1080px) {
+    .contact{
+        font-size: 1.2rem;
+    }
+}
