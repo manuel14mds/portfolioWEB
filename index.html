@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Manuel Florez</title>
+
+    <meta name="theme-color" content="#81A68C">
+
+
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/home.css">
@@ -14,7 +18,7 @@
     <link rel="stylesheet" href="./styles/footer.css">
 </head>
 
-<body>
+<body class="no_scroll">
     <header class="header">
         <nav class="nav container" id="nav">
             <h2 class="nav_title">MANUEL FLOREZ</h2>
@@ -51,7 +55,7 @@
                     <img class="close_icon_img" id="closeMenu" srcset="./images/close/close.png" alt="close">
                 </picture>
             </a>
-        </nav>
+        </nav>    
     </header>
 
     <main class="main">
@@ -337,6 +341,7 @@
         </section>
 
     </main>
+
     <footer>
         <div class="contact" id="contact" role="region">
             <form action="">
@@ -344,14 +349,14 @@
                 <input id="name" type="text" class="input_name" placeholder="Name/Company">
 
                 <label for="email" class="visually-hidden">Email</label>
-                <input id="email" type="text" class="input_email" placeholder="Your Email Address">
+                <input id="email" type="email" class="input_email" placeholder="Your Email Address">
 
                 <label for="about_input" class="visually-hidden">About</label>
                 <input id="about_input" type="text" class="input_about" placeholder="About">
                 
                 <label for="textarea" class="visually-hidden">Message</label>
                 <textarea name="" id="textarea"  rows="5" placeholder="Message"></textarea>
-                <button class="send_btn">send email</button>
+                <button class="send_btn" type="button">send email</button>
             </form>
             <div class="social_container" role="group">
                 <div class="email">
@@ -359,11 +364,11 @@
                     <span>manuel14mds@gmail.com</span>
                     <button class="copy_btn">copy</button>
                 </div>
-                <a class="github">
+                <a class="github" target="_blank" href="https://github.com/manuel14mds">
                     <div class="github_logo"></div>
                     <span>Github Profile</span>
                 </a>
-                <a class="linkedin">
+                <a class="linkedin" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/manuel14mds/">
                     <div class="linkedin_logo"></div>
                     <span>LinkedIn Profile</span>
                 </a>

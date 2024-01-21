@@ -2,8 +2,7 @@ footer{
     background-color: var(--color-3);
     color: var(--color-4);
     width: 100%;
-    margin-top: 2rem;
-    padding: 50px 15px;
+    padding: 60px 15px;
 }
 
 .contact{
@@ -109,6 +108,8 @@ form .send_btn:hover{
     
     margin-bottom: 15px;
     transition: transform 0.3s ease;
+    text-decoration: none;
+    color: var(--color-4);
 }
 .social_container .github:hover{
     transform: scale(1.05);
@@ -127,6 +128,8 @@ form .send_btn:hover{
 
     margin-bottom: 15px;
     transition: transform 0.3s ease;
+    text-decoration: none;
+    color: var(--color-4);
 }
 .social_container .linkedin:hover{
     transform: scale(1.05);
@@ -179,10 +182,12 @@ form .send_btn:hover{
     }
     .social_container{
         grid-column: 7/13;
-
+    }
+    .social_container .see_resume{
+        margin-top: 25px;
     }
     footer{
-        padding: 50px 40px;
+        padding: 100px 40px;
     }
     .footer h4{
         font-size: 3.5rem;
@@ -190,6 +195,12 @@ form .send_btn:hover{
 }
 @media (min-width: 1080px) {
     .contact{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+    }
+    .social_container .see_resume{
+        width: 200px;
+        height: 55px;
+        font-size: 1.6rem;
+        border-radius: 7px;
     }
 }

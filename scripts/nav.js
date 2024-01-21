@@ -1,27 +1,22 @@
-/* function checkIfTarget() {
-    let currentHash
-    setTimeout(()=>{
-        currentHash = window.location.hash;
-        let targetElement = document.getElementById("nav");
-        console.log('hash',currentHash)
-        console.log('target',targetElement)
-    
-        if (currentHash === "#nav") {
-            // El elemento es el target actual
-            document.body.style.setProperty('--scroll-page', 'hidden')
-        } else {
-            // El elemento no es el target
-            document.body.style.setProperty('--scroll-page', 'scroll')
-        }
-    },500)
-} */
 
-/* 
-const openBtn = document.getElementById('openMenu')
-openBtn.addEventListener('click', () => {
-    history.pushState({}, '', '#nav');
-})
-const closeBtn = document.getElementById('closeMenu')
-closeBtn.addEventListener('click', () => {
-    history.replaceState({}, '', window.location.pathname + window.location.search);
-}) */
+// Obtén los elementos de la barra de navegación
+const navHamburger = document.querySelector('.nav_hamburger');
+const navClose = document.querySelector('.nav_close');
+
+// Agrega eventos para controlar el desplazamiento
+navHamburger.addEventListener('click', function() {
+    document.body.style.overflowY = 'hidden';
+});
+
+navClose.addEventListener('click', function() {
+    document.body.style.overflowY = 'scroll';
+});
+
+// Restablecer el desplazamiento cuando se selecciona una opción del menú
+const navLinks = document.querySelectorAll('.nav_link');
+
+navLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+        document.body.style.overflowY = 'scroll';
+    });
+});

@@ -4,16 +4,21 @@
     --color-3: #81A68C;
     --color-4: #374259;
 } */
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=DM+Serif+Display&family=EB+Garamond:wght@800&family=Roboto&family=Shrikhand&display=swap');
 :root {
     --color-1: #FEF6E6;
     --color-2: #E4D3B8;
     --color-3: #81A68C;
     --color-4: #2a3242;
+    --font-title: 'Shrikhand', serif;
+    --font-text: 'Baskervville', serif;
 }
 *{
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: var(--font-text);
 }
 body {
     background-color: var(--color-1);
@@ -24,9 +29,11 @@ body {
 }
 .title{
     font-size: clamp(2rem, 8vw, 3rem);
+    font-family: var(--font-title);
+    font-weight: 800;
 }
 section{
-    margin-top: 1rem;
+    margin-bottom: 5rem;
     grid-column: 1/-1;
 }
 
@@ -35,16 +42,17 @@ section{
     main {
         grid-template-columns: repeat(12, 1fr);
     }
+    section{
+        margin-bottom: 7rem;
+    }
 }
 
 @media (min-width: 1080px) {
     main {
-        grid-template-columns: repeat(12, 1fr);
         max-width: 1280px;
         margin: 0 auto;
     }
     section{
-        margin-top: 1.5rem;
         border-radius: 10px;
     }
 }
