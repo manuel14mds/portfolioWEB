@@ -100,6 +100,10 @@ form .send_btn:hover{
     background-color: var(--color-5);
     color: var(--color-4);
 }
+.social_container .email .copied_btn{
+    background-color: var(--color-5);
+    color: var(--color-4);
+}
 .social_container .github{
     display: flex;
     justify-content: center;
@@ -178,10 +182,10 @@ form .send_btn:hover{
         gap: 4%;
     }
     form{
-        grid-column: 1/6;
+        grid-column: 1/7;
     }
     .social_container{
-        grid-column: 7/13;
+        grid-column: 8/13;
     }
     .social_container .see_resume{
         margin-top: 25px;
@@ -191,6 +195,31 @@ form .send_btn:hover{
     }
     .footer h4{
         font-size: 3.5rem;
+    }
+}
+@media (min-width: 900px) {
+    form input{
+        height: 50px;
+        margin-bottom: 8px;
+        border-radius: 7px;
+        font-size: 1.3rem;
+    }
+    form input:focus{
+        font-size: 1.1rem;
+    }
+    form textarea{
+        border-radius: 7px;
+        margin-bottom: 8px;
+        font-size: 1.3rem;
+    }
+    form textarea:focus{
+        font-size: 1.1rem;
+    }
+    form .send_btn{
+        font-size: 1.2rem;
+        width: 140px;
+        height: 45px;
+
     }
 }
 @media (min-width: 1080px) {
