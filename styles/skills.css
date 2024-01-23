@@ -29,6 +29,7 @@
     width: 20px;
     height: 20px;
 }
+
 .visually-hidden-btn {
     position: absolute;
     width: 1px;
@@ -140,14 +141,14 @@
 
 @media (min-width: 601px) {
     .skills {
-
         grid-template-columns: repeat(12, 1fr);
-        padding: 2rem 40px;
 
+        padding: 2rem 40px;
     }
 
     .skills .skills_title_box {
         gap: 10px;
+        margin-bottom: 1rem;
     }
 
     .skills .skills_title_box .skills_info {
@@ -158,13 +159,13 @@
     .skills .tech_container {
         grid-column: 2/12;
         gap: 3rem;
+
         transition-duration: 0.3s transform;
         padding: 20px 0;
     }
 
     .skills .tech_container .tech {
         width: clamp(15%, 17%, 20%);
-
     }
 
     .skills .tech_container .tech .tech_img {
@@ -180,5 +181,4 @@
     .skills .tech_container .tech .tech_name {
         font-size: 1.5rem;
     }
-
 }

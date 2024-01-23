@@ -1,0 +1,249 @@
+.projects {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+    background-color: var(--color-4);
+    padding: 1rem 15px;
+    height: auto;
+    overflow-y: scroll;
+}
+
+.project_card {
+    color: var(--color-4);
+}
+
+.projects .projects_title_box {
+    grid-column: 1/-1;
+
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.projects .projects_title_box .projects_title {
+    color: var(--color-2);
+}
+
+.projects_info {
+    background-image: url(../SVG/infoTwo.svg);
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    color: transparent;
+}
+
+.visually-hidden-btn {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.projects_info:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.carousel {
+    grid-column: 1/-1;
+}
+
+.carousel .project_card {
+    height: fit-content;
+    color: var(--color-4);
+    background-color: var(--color-1);
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.carousel .project_card:hover {
+    box-shadow: 0px 0px 10px var(--color-2);
+}
+
+.carousel .project_card .card_image {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 100%;
+}
+
+.carousel .project_card .card_title {
+    margin: 5%;
+}
+
+.carousel .project_card .card_text_box {
+    margin: 2% 5%;
+    height: 70px;
+    overflow-y: scroll;
+}
+
+.carousel .project_card .card_text_box .card_description {
+    font-size: 60%;
+    text-wrap: pretty;
+    margin-bottom: 5px;
+}
+
+.carousel .project_card .card_techs_box {
+    margin: 2% 5%;
+}
+
+.carousel .project_card .card_techs_box .card_tech {
+    background-color: var(--color-3);
+    color: var(--color-1);
+    padding: 3px 7px;
+    border-radius: 3px;
+    margin-right: 10px;
+    font-size: 7px;
+}
+
+.carousel .project_card .card_links_box {
+    margin: 2% 5% 5% 5%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+.carousel .project_card .card_links_box .card_link {
+    display: block;
+}
+
+.carousel .project_card .card_links_box .card_link .card_link_icon {
+    width: 20px;
+    aspect-ratio: 1/1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel .project_card .card_links_box .card_link .link_icon {
+    background-image: url(../SVG/link.svg);
+}
+
+.carousel .project_card .card_links_box .card_link .github_icon {
+    background-image: url(../SVG/github.svg);
+}
+
+.carousel .project_card .card_links_box .card_link .info_icon {
+    background-image: url(../SVG/info.svg);
+}
+
+.slick-dots {
+    text-align: center;
+}
+
+.slick-dots li button::before {
+    color: var(--color-2) !important;
+}
+
+
+@media (min-width: 400px) {
+
+    .carousel .project_card .card_text_box {
+        height: 100px;
+    }
+
+    .carousel .project_card .card_text_box .card_description {
+        font-size: 79%;
+    }
+
+    .carousel .project_card .card_techs_box .card_tech {
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-right: 10px;
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 601px) {
+    .projects {
+        padding: 3rem 40px;
+    }
+
+    .carousel {
+        --filter-img: grayscale(100%);
+    }
+
+    .carousel .project_card {
+        margin: 23px 10px;
+    }
+
+    .carousel .project_card {
+        transition: transform 0.6s ease;
+    }
+
+    .carousel .project_card:hover {
+        --filter-img: grayscale(0%);
+        transform: scale(1.05);
+    }
+
+    .carousel .project_card .card_image {
+        filter: var(--filter-img);
+    }
+
+    .projects_info {
+        height: 32px;
+        width: 32px;
+    }
+
+    .projects .projects_title_box {
+        gap: 10px;
+        margin-bottom: 1rem;
+    }
+
+    .projects .projects_box .project_card .card_title {
+        font-size: 0.8rem;
+    }
+
+    .projects .projects_box .project_card .card_text_box {
+        height: 50px;
+    }
+
+    .projects .projects_box .project_card .card_text_box .card_description {
+        font-size: 49%;
+    }
+
+    .projects .projects_box .project_card .card_techs_box .card_tech {
+        padding: 3px 7px;
+        border-radius: 3px;
+        margin-right: 0px;
+        font-size: 7px;
+    }
+
+    .projects .projects_box .project_card .card_links_box .card_link .card_link_icon {
+        width: 14px;
+    }
+
+}
+
+@media (min-width: 910px) {
+    .projects .projects_box .project_card .card_title {
+        font-size: 1.2rem;
+    }
+
+    .projects .projects_box .project_card .card_text_box {
+        height: 80px;
+    }
+
+    .projects .projects_box .project_card .card_text_box .card_description {
+        font-size: 0.9;
+    }
+
+    .projects .projects_box .project_card .card_techs_box .card_tech {
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-right: 7px;
+        font-size: 11px;
+    }
+
+    .projects .projects_box .project_card .card_links_box .card_link .card_link_icon {
+        width: 20px;
+    }
+}
