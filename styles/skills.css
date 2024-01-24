@@ -4,6 +4,10 @@
     gap: 10px;
 
     padding: 0 15px;
+    background-image: url('../SVG/skills.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .skills .skills_title_box {
