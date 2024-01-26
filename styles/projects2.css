@@ -56,6 +56,9 @@
 .carousel {
     grid-column: 1/-1;
 }
+.slick-list{
+    background-color: transparent !important;
+}
 
 .carousel .project_card {
     height: fit-content;

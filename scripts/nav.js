@@ -22,3 +22,10 @@ navLinks.forEach(function(link) {
         document.body.classList.remove('no-scroll');
     });
 });
+
+
+document.querySelector('.nav_link_btn').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        window.location.href = this.href;
+    }
+});

@@ -178,7 +178,7 @@ form .send_btn:hover{
 }
 @media (min-width: 601px) {
     footer{
-        background-image: url('../SVG/helmet2.svg');
+        background-image: url('../SVG/helmet.svg');
         background-position: right;
         background-size: 50%;
         background-repeat: no-repeat;
