@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/projects2.css">
 
+
+    <!-- Email.Js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"> </script>
     <!-- Slick Carousel CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- Slick Carousel Theme (opcional) -->
@@ -611,8 +614,8 @@
                 <input id="about_input" name="about" type="text" class="input_about" placeholder="About" required>
 
                 <label for="textarea" class="visually-hidden">Message</label>
-                <textarea name="" id="textarea" rows="5" placeholder="Message" required></textarea>
-                <button class="send_btn" id="sendContactBtn" type="button">send email</button>
+                <textarea name="message" id="textarea" rows="5" placeholder="Message" required></textarea>
+                <button class="send_btn" id="sendContactBtn" type="submit">send email</button>
             </form>
             <div class="social_container" role="group">
                 <div class="email">
