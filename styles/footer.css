@@ -49,6 +49,13 @@ form textarea{
     border-radius: 5px;
     margin-bottom: 5px;
 }
+form textarea::-webkit-input-placeholder{
+    width: 100%;
+    color: var(--color-4);
+    background-color: var(--color-1);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
 form textarea:focus{
     border: 2px solid var(--color-4);
     outline: none;

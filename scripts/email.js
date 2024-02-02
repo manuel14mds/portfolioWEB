@@ -43,12 +43,12 @@ form.addEventListener('submit', (evt)=>{
     form.reset()
 
     Toastify({
-        text: "EMAIL SENT",
+        text: "Email sent successfully",
         className: "info",
         style: {
-        background: "#B89A5E",
-        color: '#252525'
+        background: "#81A68C",
+        color: '#2a3242'
         },
-        duration:3500
+        duration:3800
     }).showToast()
 })
