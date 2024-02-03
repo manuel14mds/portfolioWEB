@@ -5,14 +5,17 @@
     --color-4: #374259;
 } */
 /* @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=DM+Serif+Display&family=EB+Garamond:wght@800&family=Roboto&family=Shrikhand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Girassol&family=Suez+One&display=swap');
+
 :root {
     --color-1: #FEF6E6;
     --color-2: #E4D3B8;
     --color-3: #81A68C;
     --color-4: #2a3242;
-    --font-title: 'Shrikhand', serif;
+    --font-title: 'Suez One', serif;
     --font-text: 'Baskervville', serif;
+    --font-subtitle: 'Girassol', serif;
 }
 ::backdrop {
     background-color: var(--color-1);
@@ -33,7 +36,7 @@ body {
 }
 .title{
     font-size: clamp(2rem, 8vw, 3rem);
-    font-family: var(--font-title);
+    font-family: var(--font-subtitle);
     font-weight: 800;
 }
 section{
@@ -124,6 +127,14 @@ dialog::backdrop {
     font-weight: 200;
     padding: 0;
     margin: 0 0 10px 0;
+}
+.dialog_content .dialog_a{
+    color: white;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+.dialog_content .dialog_a:visited{
+    color: rgb(246, 222, 253);
 }
 .dialog_content ul li .dialog_p{
     margin: 0;
