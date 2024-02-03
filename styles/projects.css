@@ -84,7 +84,7 @@
 
 .carousel .project_card .card_text_box {
     margin: 2% 5%;
-    height: 70px;
+    height: 65px;
     overflow-y: scroll;
 }
 
@@ -137,6 +137,9 @@
 .carousel .project_card .card_links_box .card_link .info_icon {
     background-image: url(../SVG/info.svg);
 }
+.carousel .project_card .card_links_box .card_link .info_icon:hover {
+    cursor: pointer;
+}
 
 .slick-dots {
     text-align: center;
@@ -150,7 +153,7 @@
 @media (min-width: 400px) {
 
     .carousel .project_card .card_text_box {
-        height: 100px;
+        height: 80px;
     }
 
     .carousel .project_card .card_text_box .card_description {

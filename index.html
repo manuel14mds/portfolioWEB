@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./styles/about.css">
     <link rel="stylesheet" href="./styles/skills.css">
     <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/projects2.css">
+    <link rel="stylesheet" href="./styles/projects.css">
 
     <!-- Toastify -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
@@ -24,7 +24,8 @@
     <!-- Slick Carousel CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- Slick Carousel -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
 </head>
 
@@ -92,7 +93,7 @@
 
         <section class="about" role="article" id="about">
             <h2 class="about_title title">ABOUT ME</h2>
-            <P class="about_paragraph">Hello, <strong class="about_strong">I'm Manuel Esteban Florez Lopez</strong>, an
+            <P class="about_paragraph">Hello, I'm Manuel Esteban Florez Lopez, an
                 enthusiastic Software Developer from
                 Cartagena de Indias, Colombia. As a graduate in <strong class="about_strong">Systems
                     Engineering</strong>, I have specialized in the
@@ -109,61 +110,105 @@
 
         <section class="skills" id="skills" role="region" aria-labelledby="skills-heading">
             <div class="skills_title_box">
-                <h2 class="skills_title title">Skills</h2>
-                <button class="skills_info" id="skills-dialog-open">
-                    <span class="visually-hidden-btn">Información</span>
+                <h2 class="skills_title title">SKILLS</h2>
+                <button class="skills_info tooltip" id="skills-dialog-open">
+                    <span class="tooltiptext">info</span>
                 </button>
             </div>
 
-            <dialog id="skills-dialog"  role="article">
+            <dialog id="skills-dialog" role="article">
                 <div class="dialog_header">
                     <h3 class="dialog_title">Skills Info</h3>
-                    <button type="button" class="dialog_header_btn" 
-                    onclick="closeDialog('skills-dialog')"></button>
-                    <button type="button" class="dialog_header_btn"
-                    onclick="closeDialog('skills-dialog')"></button>
-                    <button type="button" class="dialog_header_btn" 
-                    onclick="closeDialog('skills-dialog')" autofocus></button>
+                    <button type="button" class="dialog_header_btn" onclick="closeDialog('skills-dialog')"></button>
+                    <button type="button" class="dialog_header_btn" onclick="closeDialog('skills-dialog')"></button>
+                    <button type="button" class="dialog_header_btn" onclick="closeDialog('skills-dialog')"
+                        autofocus></button>
                 </div>
                 <div class="dialog_content">
                     <h3 class="dialog_title_1">My skills</h3>
                     <h4 class="dialog_title_2">Language</h4>
                     <ul>
-                        <li><p class="dialog_p">English B1</p></li>
-                        <li><p class="dialog_p">Spanish Native</p></li>
+                        <li>
+                            <p class="dialog_p">English B1</p>
+                        </li>
+                        <li>
+                            <p class="dialog_p">Spanish Native</p>
+                        </li>
                     </ul>
                     <h4 class="dialog_title_2">Frontend Development</h4>
                     <ul>
-                        <li><p class="dialog_p">HTML & CSS</p></li>
-                        <li><p class="dialog_p">Javascript</p></li>
-                        <li><p class="dialog_p">Typescript</p></li>
-                        <li><p class="dialog_p">React.js</p></li>
-                        <li><p class="dialog_p">Angular</p></li>
-                        <li><p class="dialog_p">Bootstrap</p></li>
-                        <li><p class="dialog_p">Tailwind</p></li>
+                        <li>
+                            <p class="dialog_p">HTML & CSS</p>
+                        </li>
+                        <li>
+                            <p class="dialog_p">Javascript</p>
+                        </li>
+                        <li>
+                            <p class="dialog_p">Typescript</p>
+                        </li>
+                        <li>
+                            <p class="dialog_p">React.js</p>
+                        </li>
+                        <li>
+                            <p class="dialog_p">Angular</p>
+                        </li>
+                        <li>
+                            <p class="dialog_p">Bootstrap</p>
+                        </li>
+                        <li>
+                            <p class="dialog_p">Tailwind</p>
+                        </li>
                     </ul>
                     <h4 class="dialog_title_2">Backend Development</h4>
                     <ul>
-                        <li><p class="dialog_p">Node.js Express.js</p></li>
-                        <li><p class="dialog_p">JWT, Authentication & Authorization</p></li>
-                        <li><p class="dialog_p">Sockets</p></li>
-                        <li><p class="dialog_p">API REST</p></li>
-                        <li><p class="dialog_p">Server Site Rendering</p></li>
-                        <li><p class="dialog_p">MVC</p></li>
-                        <li><p class="dialog_p">ORM Sequelize Mongoose</p></li>
+                        <li>
+                            <p class="dialog_p">Node.js Express.js</p>
+                        </li>
+                        <li>
+                            <p class="dialog_p">JWT, Authentication & Authorization</p>
+                        </li>
+                        <li>
+                            <p class="dialog_p">Sockets</p>
+                        </li>
+                        <li>
+                            <p class="dialog_p">API REST</p>
+                        </li>
+                        <li>
+                            <p class="dialog_p">Server Site Rendering</p>
+                        </li>
+                        <li>
+                            <p class="dialog_p">MVC</p>
+                        </li>
+                        <li>
+                            <p class="dialog_p">ORM Sequelize Mongoose</p>
+                        </li>
                     </ul>
                     <h4 class="dialog_title_2">Data Bases</h4>
                     <ul>
-                        <li><p class="dialog_p">MongoDB</p></li>
-                        <li><p class="dialog_p">Firebase</p></li>
-                        <li><p class="dialog_p">MySQL</p></li>
-                        <li><p class="dialog_p">SQLite</p></li>
+                        <li>
+                            <p class="dialog_p">MongoDB</p>
+                        </li>
+                        <li>
+                            <p class="dialog_p">Firebase</p>
+                        </li>
+                        <li>
+                            <p class="dialog_p">MySQL</p>
+                        </li>
+                        <li>
+                            <p class="dialog_p">SQLite</p>
+                        </li>
                     </ul>
                     <h4 class="dialog_title_2">Others</h4>
                     <ul>
-                        <li><p class="dialog_p">Python</p></li>
-                        <li><p class="dialog_p">Django</p></li>
-                        <li><p class="dialog_p">AWS Essentials</p></li>
+                        <li>
+                            <p class="dialog_p">Python</p>
+                        </li>
+                        <li>
+                            <p class="dialog_p">Django</p>
+                        </li>
+                        <li>
+                            <p class="dialog_p">AWS Essentials</p>
+                        </li>
                     </ul>
 
                 </div>
@@ -223,26 +268,32 @@
 
         <section class="projects" id="projects" role="region" aria-labelledby="projects-heading">
             <div class="projects_title_box">
-                <h2 class="projects_title title">Projects</h2>
-                <button class="projects_info" id="projects-dialog-open">
-                    <span class="visually-hidden-btn">Información</span>
+                <h2 class="projects_title title">PROJECTS</h2>
+                <button class="projects_info tooltip" id="projects-dialog-open">
+                    <span class="tooltiptext">info</span>
                 </button>
             </div>
             <!-- Project Info Dialog -->
             <dialog id="projects-dialog" role="article">
                 <div class="dialog_header">
                     <h3 class="dialog_title">Projects Info</h3>
-                    <button type="button" class="dialog_header_btn" 
-                    onclick="closeDialog('projects-dialog')"></button>
-                    <button type="button" class="dialog_header_btn"
-                    onclick="closeDialog('projects-dialog')"></button>
-                    <button type="button" class="dialog_header_btn" 
-                    onclick="closeDialog('projects-dialog')" autofocus></button>
+                    <button type="button" class="dialog_header_btn" onclick="closeDialog('projects-dialog')"></button>
+                    <button type="button" class="dialog_header_btn" onclick="closeDialog('projects-dialog')"></button>
+                    <button type="button" class="dialog_header_btn" onclick="closeDialog('projects-dialog')"
+                        autofocus></button>
                 </div>
                 <div class="dialog_content">
                     <h3 class="dialog_title_1">Explore More of My Projects</h3>
-                    <p class="dialog_p">Here, you have seen a selection of my most interesting and representative projects, each showcasing specific skills and knowledge that I have acquired and honed throughout my career. These projects have been carefully chosen to present you with a broad spectrum of my capabilities in software development.</p>
-                    <p class="dialog_p">However, my passion for learning and creating doesn't stop here. On my <a  class="dialog_a" href="https://github.com/manuel14mds" target="_blank" rel="noreferrer">GitHub profile</a>, you'll find a more extensive collection of my work, which includes a variety of applications, experiments, and collaborations. Each project on my GitHub is accompanied by its source code, giving you the opportunity to delve into the programming techniques and strategies I employ in detail.</p>
+                    <p class="dialog_p">Here, you have seen a selection of my most interesting and representative
+                        projects, each showcasing specific skills and knowledge that I have acquired and honed
+                        throughout my career. These projects have been carefully chosen to present you with a broad
+                        spectrum of my capabilities in software development.</p>
+                    <p class="dialog_p">However, my passion for learning and creating doesn't stop here. On my <a
+                            class="dialog_a" href="https://github.com/manuel14mds" target="_blank"
+                            rel="noreferrer">GitHub profile</a>, you'll find a more extensive collection of my work,
+                        which includes a variety of applications, experiments, and collaborations. Each project on my
+                        GitHub is accompanied by its source code, giving you the opportunity to delve into the
+                        programming techniques and strategies I employ in detail.</p>
                 </div>
             </dialog>
 
@@ -256,12 +307,8 @@
                     </picture>
                     <h3 class="card_title"> Caballos En Libertad</h3>
                     <div class="card_text_box">
-                        <p class="card_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
-                            provident cupiditate dolor, velit eligendi animi cum consequatur beatae sit laboriosam
-                            officiis, eveniet facere sunt consequuntur! Doloremque doloribus dolorum quis sapiente.</p>
-                        <p class="card_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
-                            provident cupiditate dolor, velit eligendi animi cum consequatur beatae sit laboriosam
-                            officiis, eveniet facere sunt consequuntur! Doloremque doloribus dolorum quis sapiente.</p>
+                        <p class="card_description">This project resulted in the official website for the Caballos En
+                            Libertad foundation in Buenos Aires, Argentina.</p>
                     </div>
                     <div class="card_techs_box">
                         <label class="card_tech">HTML</label>
@@ -269,17 +316,13 @@
                         <label class="card_tech">Bootstrap</label>
                     </div>
                     <div class="card_links_box">
-                        <a href="#" class="card_link" target="_blank">
+                        <a href="http://caballosenlibertad.org/" class="card_link tooltip" target="_blank" rel="noreferrer">
                             <div class="card_link_icon link_icon"></div>
-                            <span class="visually-hidden-btn">link</span>
+                            <span class="tooltiptext">see</span>
                         </a>
-                        <a href="#" class="card_link" target="_blank">
-                            <div class="card_link_icon github_icon"></div>
-                            <span class="visually-hidden-btn">github</span>
-                        </a>
-                        <a class="card_link" id="openDialog-projectOne">
+                        <a class="card_link tooltip" id="openDialog-projectOne">
                             <div class="card_link_icon info_icon"></div>
-                            <span class="visually-hidden-btn">info</span>
+                            <span class="tooltiptext">detail</span>
                         </a>
                     </div>
                 </div>
@@ -292,12 +335,9 @@
                     </picture>
                     <h3 class="card_title">Information Technology</h3>
                     <div class="card_text_box">
-                        <p class="card_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
-                            provident cupiditate dolor, velit eligendi animi cum consequatur beatae sit laboriosam
-                            officiis, eveniet facere sunt consequuntur! Doloremque doloribus dolorum quis sapiente.</p>
-                        <p class="card_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
-                            provident cupiditate dolor, velit eligendi animi cum consequatur beatae sit laboriosam
-                            officiis, eveniet facere sunt consequuntur! Doloremque doloribus dolorum quis sapiente.</p>
+                        <p class="card_description">An administrative SPA for managing students, professors, and courses
+                            at a fictional university, using Angular 16, Angular Material UI, Firestore, and Firebase
+                            Authentication for an interactive experience.</p>
                     </div>
                     <div class="card_techs_box">
                         <label class="card_tech">Angular</label>
@@ -305,17 +345,18 @@
                         <label class="card_tech">Firebase</label>
                     </div>
                     <div class="card_links_box">
-                        <a href="#" class="card_link" target="_blank">
+                        <a href="https://exquisite-pasca-fc4fed.netlify.app/" class="card_link tooltip" target="_blank"
+                            rel="noreferrer">
                             <div class="card_link_icon link_icon"></div>
-                            <span class="visually-hidden-btn">link</span>
+                            <span class="tooltiptext">see</span>
                         </a>
-                        <a href="#" class="card_link" target="_blank">
+                        <a href="https://github.com/manuel14mds/ITU" class="card_link tooltip" target="_blank" rel="noreferrer">
                             <div class="card_link_icon github_icon"></div>
-                            <span class="visually-hidden-btn">github</span>
+                            <span class="tooltiptext">code</span>
                         </a>
-                        <a class="card_link" id="openDialog-projectTwo">
+                        <a class="card_link tooltip" id="openDialog-projectTwo">
                             <div class="card_link_icon info_icon"></div>
-                            <span class="visually-hidden-btn">info</span>
+                            <span class="tooltiptext">detail</span>
                         </a>
                     </div>
                 </div>
@@ -328,12 +369,9 @@
                     </picture>
                     <h3 class="card_title">Café Cartagena</h3>
                     <div class="card_text_box">
-                        <p class="card_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
-                            provident cupiditate dolor, velit eligendi animi cum consequatur beatae sit laboriosam
-                            officiis, eveniet facere sunt consequuntur! Doloremque doloribus dolorum quis sapiente.</p>
-                        <p class="card_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
-                            provident cupiditate dolor, velit eligendi animi cum consequatur beatae sit laboriosam
-                            officiis, eveniet facere sunt consequuntur! Doloremque doloribus dolorum quis sapiente.</p>
+                        <p class="card_description">An ecommerce developed with Node.js and Express.js, offering an
+                            exclusive selection of coffees through Server-Side Rendering (SSR) and MongoDB, designed to
+                            optimize the online shopping experience.</p>
                     </div>
                     <div class="card_techs_box">
                         <label class="card_tech">Node js</label>
@@ -341,17 +379,19 @@
                         <label class="card_tech">MongoDB</label>
                     </div>
                     <div class="card_links_box">
-                        <a href="#" class="card_link" target="_blank">
+                        <a href="https://cafectg-production.up.railway.app/" class="card_link tooltip" target="_blank"
+                            rel="noreferrer">
                             <div class="card_link_icon link_icon"></div>
-                            <span class="visually-hidden-btn">link</span>
+                            <span class="tooltiptext">see</span>
                         </a>
-                        <a href="#" class="card_link" target="_blank">
+                        <a href="https://github.com/manuel14mds/cafectg" class="card_link tooltip" target="_blank"
+                            rel="noreferrer">
                             <div class="card_link_icon github_icon"></div>
-                            <span class="visually-hidden-btn">github</span>
+                            <span class="tooltiptext">code</span>
                         </a>
-                        <a class="card_link" id="openDialog-projectThree">
+                        <a class="card_link tooltip" id="openDialog-projectThree">
                             <div class="card_link_icon info_icon"></div>
-                            <span class="visually-hidden-btn">info</span>
+                            <span class="tooltiptext">detail</span>
                         </a>
                     </div>
                 </div>
@@ -364,29 +404,28 @@
                     </picture>
                     <h3 class="card_title">World Forum</h3>
                     <div class="card_text_box">
-                        <p class="card_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
-                            provident cupiditate dolor, velit eligendi animi cum consequatur beatae sit laboriosam
-                            officiis, eveniet facere sunt consequuntur! Doloremque doloribus dolorum quis sapiente.</p>
-                        <p class="card_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
-                            provident cupiditate dolor, velit eligendi animi cum consequatur beatae sit laboriosam
-                            officiis, eveniet facere sunt consequuntur! Doloremque doloribus dolorum quis sapiente.</p>
+                        <p class="card_description">An interactive forum developed with React.js and TypeScript, delving
+                            into the use of semantic HTML and React project organizational structure, promoting debate
+                            and interaction.</p>
                     </div>
                     <div class="card_techs_box">
                         <label class="card_tech">React js</label>
                         <label class="card_tech">Typescript</label>
                     </div>
                     <div class="card_links_box">
-                        <a href="#" class="card_link" target="_blank">
+                        <a href="https://6500aabdb9513827a800daeb--jolly-kulfi-6e85f7.netlify.app/" class="card_link tooltip"
+                            target="_blank" rel="noreferrer">
                             <div class="card_link_icon link_icon"></div>
-                            <span class="visually-hidden-btn">link</span>
+                            <span class="tooltiptext">see</span>
                         </a>
-                        <a href="#" class="card_link" target="_blank">
+                        <a href="https://github.com/manuel14mds/forum" class="card_link tooltip" target="_blank"
+                            rel="noreferrer">
                             <div class="card_link_icon github_icon"></div>
-                            <span class="visually-hidden-btn">github</span>
+                            <span class="tooltiptext">code</span>
                         </a>
-                        <a class="card_link" id="openDialog-projectFour">
+                        <a class="card_link tooltip" id="openDialog-projectFour">
                             <div class="card_link_icon info_icon"></div>
-                            <span class="visually-hidden-btn">info</span>
+                            <span class="tooltiptext">info</span>
                         </a>
                     </div>
                 </div>
@@ -399,29 +438,28 @@
                     </picture>
                     <h3 class="card_title">Nike Store</h3>
                     <div class="card_text_box">
-                        <p class="card_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
-                            provident cupiditate dolor, velit eligendi animi cum consequatur beatae sit laboriosam
-                            officiis, eveniet facere sunt consequuntur! Doloremque doloribus dolorum quis sapiente.</p>
-                        <p class="card_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
-                            provident cupiditate dolor, velit eligendi animi cum consequatur beatae sit laboriosam
-                            officiis, eveniet facere sunt consequuntur! Doloremque doloribus dolorum quis sapiente.</p>
+                        <p class="card_description">A SPA that simulates the user experience of a Nike ecommerce,
+                            highlighting custom component styling and REST API integration, using React.js and
+                            Firestore.</p>
                     </div>
                     <div class="card_techs_box">
                         <label class="card_tech">React js</label>
                         <label class="card_tech">Firestore</label>
                     </div>
                     <div class="card_links_box">
-                        <a href="#" class="card_link" target="_blank">
+                        <a href="https://nike-store-project.netlify.app/" class="card_link tooltip" target="_blank"
+                            rel="noreferrer">
                             <div class="card_link_icon link_icon"></div>
-                            <span class="visually-hidden-btn">link</span>
+                            <span class="tooltiptext">see</span>
                         </a>
-                        <a href="#" class="card_link" target="_blank">
+                        <a href="https://github.com/manuel14mds/nikeStore" class="card_link tooltip" target="_blank"
+                            rel="noreferrer">
                             <div class="card_link_icon github_icon"></div>
-                            <span class="visually-hidden-btn">github</span>
+                            <span class="tooltiptext">code</span>
                         </a>
-                        <a class="card_link" id="openDialog-projectFive">
+                        <a class="card_link tooltip" id="openDialog-projectFive">
                             <div class="card_link_icon info_icon"></div>
-                            <span class="visually-hidden-btn">info</span>
+                            <span class="tooltiptext">info</span>
                         </a>
                     </div>
                 </div>
@@ -434,12 +472,9 @@
                     </picture>
                     <h3 class="card_title"> Human Front Aid</h3>
                     <div class="card_text_box">
-                        <p class="card_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
-                            provident cupiditate dolor, velit eligendi animi cum consequatur beatae sit laboriosam
-                            officiis, eveniet facere sunt consequuntur! Doloremque doloribus dolorum quis sapiente.</p>
-                        <p class="card_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
-                            provident cupiditate dolor, velit eligendi animi cum consequatur beatae sit laboriosam
-                            officiis, eveniet facere sunt consequuntur! Doloremque doloribus dolorum quis sapiente.</p>
+                        <p class="card_description">A website under development for the Human Front Aid foundation in
+                            Ukraine, supported by InkuA. It uses web technologies to facilitate humanitarian assistance
+                            in the armed conflict.</p>
                     </div>
                     <div class="card_techs_box">
                         <label class="card_tech">HTML</label>
@@ -447,17 +482,9 @@
                         <label class="card_tech">Javacript</label>
                     </div>
                     <div class="card_links_box">
-                        <a href="#" class="card_link" target="_blank">
-                            <div class="card_link_icon link_icon"></div>
-                            <span class="visually-hidden-btn">link</span>
-                        </a>
-                        <a href="#" class="card_link" target="_blank">
-                            <div class="card_link_icon github_icon"></div>
-                            <span class="visually-hidden-btn">github</span>
-                        </a>
-                        <a class="card_link" id="openDialog-projectSix">
+                        <a class="card_link tooltip" id="openDialog-projectSix">
                             <div class="card_link_icon info_icon"></div>
-                            <span class="visually-hidden-btn">info</span>
+                            <span class="tooltiptext">info</span>
                         </a>
                     </div>
                 </div>
@@ -468,126 +495,139 @@
             <dialog id="dialogProject-one" role="article">
                 <div class="dialog_header">
                     <h4 class="dialog_title">Project</h4>
-                    <button type="button" class="dialog_header_btn" 
-                    onclick="closeDialog('dialogProject-one')"></button>
-                    <button type="button" class="dialog_header_btn"
-                    onclick="closeDialog('dialogProject-one')"></button>
-                    <button type="button" class="dialog_header_btn" 
-                    onclick="closeDialog('dialogProject-one')" autofocus></button>
+                    <button type="button" class="dialog_header_btn" onclick="closeDialog('dialogProject-one')"></button>
+                    <button type="button" class="dialog_header_btn" onclick="closeDialog('dialogProject-one')"></button>
+                    <button type="button" class="dialog_header_btn" onclick="closeDialog('dialogProject-one')"
+                        autofocus></button>
                 </div>
                 <div class="dialog_content">
-                    <h4 class="dialog_title_1">Human Front Aid 1</h4>
-                    <h5 class="dialog_title_2">What is it?</h5>
-                    <p class="dialog_p">Here, .</p>
-                    <h5 class="dialog_title_2">When I did it?</h5>
-                    <p class="dialog_p">Here, .</p>
-                    <h5 class="dialog_title_2">What was my role?</h5>
-                    <p class="dialog_p">Here, .</p>
+                    <h4 class="dialog_title_1">Caballos En Libertad</h4>
+                    <p class="dialog_p">Caballos en Libertad is a website created for a horse foundation in Buenos
+                        Aires, Argentina, aiming to highlight its mission and facilitate community interaction. The
+                        initiative came from the InkuA foundation, where I collaborate, and was a joint effort between
+                        the design area, which defined the aesthetics and usability, and the IT team, which carried out
+                        the technical implementation.</p>
+                    <p class="dialog_p">As a developer and leader of the IT team, I coordinated and contributed to the
+                        site's layout, ensuring the design translated into a fluid and accessible web experience. We
+                        used HTML, CSS, and JavaScript for content structuring and Bootstrap for responsive design,
+                        adapting to any device from mobile to desktops, maintaining a consistent and appealing
+                        aesthetic.</p>
                 </div>
             </dialog>
 
             <dialog id="dialogProject-two" role="article">
                 <div class="dialog_header">
                     <h4 class="dialog_title">Project</h4>
-                    <button type="button" class="dialog_header_btn" 
-                    onclick="closeDialog('dialogProject-two')"></button>
-                    <button type="button" class="dialog_header_btn"
-                    onclick="closeDialog('dialogProject-two')"></button>
-                    <button type="button" class="dialog_header_btn" 
-                    onclick="closeDialog('dialogProject-two')" autofocus></button>
+                    <button type="button" class="dialog_header_btn" onclick="closeDialog('dialogProject-two')"></button>
+                    <button type="button" class="dialog_header_btn" onclick="closeDialog('dialogProject-two')"></button>
+                    <button type="button" class="dialog_header_btn" onclick="closeDialog('dialogProject-two')"
+                        autofocus></button>
                 </div>
                 <div class="dialog_content">
-                    <h4 class="dialog_title_1">Human Front Aid 2</h4>
-                    <h5 class="dialog_title_2">What is it?</h5>
-                    <p class="dialog_p">Here, .</p>
-                    <h5 class="dialog_title_2">When I did it?</h5>
-                    <p class="dialog_p">Here, .</p>
-                    <h5 class="dialog_title_2">What was my role?</h5>
-                    <p class="dialog_p">Here, .</p>
+                    <h4 class="dialog_title_1">Information Technology Information</h4>
+                    <p class="dialog_p">Information Technology University is a SPA administrative application designed
+                        to simulate the management environment of a fictional university, facilitating the organization
+                        and administration of students, professors, courses, calendars, and classes. I fully conceived
+                        and developed it to apply and showcase my skills and knowledge in modern web development.</p>
+                    <p class="dialog_p">Using Angular 16 as the development core, I created a dynamic and highly
+                        interactive application that responds in real-time to user interactions. Angular Material UI
+                        made the interface intuitive and visually attractive, offering a smooth and coherent user
+                        experience. For data management, I chose Firestore, enabling effective and real-time data
+                        persistence, while Firebase Authentication handles user security and authentication.</p>
                 </div>
             </dialog>
 
             <dialog id="dialogProject-three" role="article">
                 <div class="dialog_header">
                     <h4 class="dialog_title">Project</h4>
-                    <button type="button" class="dialog_header_btn" 
-                    onclick="closeDialog('dialogProject-three')"></button>
                     <button type="button" class="dialog_header_btn"
-                    onclick="closeDialog('dialogProject-three')"></button>
-                    <button type="button" class="dialog_header_btn" 
-                    onclick="closeDialog('dialogProject-three')" autofocus></button>
+                        onclick="closeDialog('dialogProject-three')"></button>
+                    <button type="button" class="dialog_header_btn"
+                        onclick="closeDialog('dialogProject-three')"></button>
+                    <button type="button" class="dialog_header_btn" onclick="closeDialog('dialogProject-three')"
+                        autofocus></button>
                 </div>
                 <div class="dialog_content">
-                    <h4 class="dialog_title_1">Human Front Aid 3</h4>
-                    <h5 class="dialog_title_2">What is it?</h5>
-                    <p class="dialog_p">Here, .</p>
-                    <h5 class="dialog_title_2">When I did it?</h5>
-                    <p class="dialog_p">Here, .</p>
-                    <h5 class="dialog_title_2">What was my role?</h5>
-                    <p class="dialog_p">Here, .</p>
+                    <h4 class="dialog_title_1">Café Cartagena</h4>
+                    <p class="dialog_p">Café Cartagena is a specialized ecommerce offering an exclusive selection of
+                        coffees, marking my most ambitious project to date. Entirely conceived and developed by me,
+                        "Café Cartagena" simulates the operation of a virtual coffee company store, employing advanced
+                        web development techniques.</p>
+                    <p class="dialog_p">Built on Node.js and Express.js, and using MongoDB for data management, this
+                        project adopts a Server-Side Rendering (SSR) approach to optimize site delivery. The interface,
+                        created with Handlebars and styled with Bootstrap, ensures a consistent and adaptive user
+                        experience across all devices.</p>
                 </div>
             </dialog>
 
             <dialog id="dialogProject-four" role="article">
                 <div class="dialog_header">
                     <h4 class="dialog_title">Project</h4>
-                    <button type="button" class="dialog_header_btn" 
-                    onclick="closeDialog('dialogProject-four')"></button>
                     <button type="button" class="dialog_header_btn"
-                    onclick="closeDialog('dialogProject-four')"></button>
-                    <button type="button" class="dialog_header_btn" 
-                    onclick="closeDialog('dialogProject-four')" autofocus></button>
+                        onclick="closeDialog('dialogProject-four')"></button>
+                    <button type="button" class="dialog_header_btn"
+                        onclick="closeDialog('dialogProject-four')"></button>
+                    <button type="button" class="dialog_header_btn" onclick="closeDialog('dialogProject-four')"
+                        autofocus></button>
                 </div>
                 <div class="dialog_content">
-                    <h4 class="dialog_title_1">Human Front Aid 4</h4>
-                    <h5 class="dialog_title_2">What is it?</h5>
-                    <p class="dialog_p">Here, .</p>
-                    <h5 class="dialog_title_2">When I did it?</h5>
-                    <p class="dialog_p">Here, .</p>
-                    <h5 class="dialog_title_2">What was my role?</h5>
-                    <p class="dialog_p">Here, .</p>
+                    <h4 class="dialog_title_1">World Forum</h4>
+                    <p class="dialog_p">World Forum represents a personal challenge I undertook to deepen my experience
+                        in developing SPA web applications using React.js and TypeScript. This project is not just a
+                        testament to my technical ability to create interactive web solutions but also reflects my
+                        commitment to adopting advanced web development practices, including the use of semantic HTML
+                        and meticulous project structure organization.</p>
+                    <p class="dialog_p">Entirely developed by me, "World Forum" serves as a proving ground to implement
+                        and refine my understanding of efficient folder and route organization in a React project,
+                        ensuring a scalable and maintainable codebase. This approach not only enhances code readability
+                        but also optimizes future collaboration and project adaptability.</p>
                 </div>
             </dialog>
 
             <dialog id="dialogProject-five" role="article">
                 <div class="dialog_header">
                     <h4 class="dialog_title">Project</h4>
-                    <button type="button" class="dialog_header_btn" 
-                    onclick="closeDialog('dialogProject-five')"></button>
                     <button type="button" class="dialog_header_btn"
-                    onclick="closeDialog('dialogProject-five')"></button>
-                    <button type="button" class="dialog_header_btn" 
-                    onclick="closeDialog('dialogProject-five')" autofocus></button>
+                        onclick="closeDialog('dialogProject-five')"></button>
+                    <button type="button" class="dialog_header_btn"
+                        onclick="closeDialog('dialogProject-five')"></button>
+                    <button type="button" class="dialog_header_btn" onclick="closeDialog('dialogProject-five')"
+                        autofocus></button>
                 </div>
                 <div class="dialog_content">
-                    <h4 class="dialog_title_1">Human Front Aid 5</h4>
-                    <h5 class="dialog_title_2">What is it?</h5>
-                    <p class="dialog_p">Here, .</p>
-                    <h5 class="dialog_title_2">When I did it?</h5>
-                    <p class="dialog_p">Here, .</p>
-                    <h5 class="dialog_title_2">What was my role?</h5>
-                    <p class="dialog_p">Here, .</p>
+                    <h4 class="dialog_title_1">Nike Store</h4>
+                    <p class="dialog_p">Nike Store is a SPA web application I designed and developed to simulate the
+                        user experience of an ecommerce site, focusing on the frontend presentation of an online store.
+                        This personal project was an opportunity to dive deeper into my skills with React.js,
+                        emphasizing custom component styling and REST API integration for dynamic data handling.</p>
+                    <p class="dialog_p">Choosing Firestore as the database management system aligns with the aim to
+                        implement realistic ecommerce functionalities, such as inventory management and real-time
+                        product updates. Through "Nike Store", I've showcased my ability to create intuitive and
+                        appealing user interfaces while efficiently managing business logic and data persistence in
+                        modern web applications.</p>
                 </div>
             </dialog>
 
             <dialog id="dialogProject-six" role="article">
                 <div class="dialog_header">
                     <h4 class="dialog_title">Project</h4>
-                    <button type="button" class="dialog_header_btn" 
-                    onclick="closeDialog('dialogProject-six')"></button>
-                    <button type="button" class="dialog_header_btn"
-                    onclick="closeDialog('dialogProject-six')"></button>
-                    <button type="button" class="dialog_header_btn" 
-                    onclick="closeDialog('dialogProject-six')" autofocus></button>
+                    <button type="button" class="dialog_header_btn" onclick="closeDialog('dialogProject-six')"></button>
+                    <button type="button" class="dialog_header_btn" onclick="closeDialog('dialogProject-six')"></button>
+                    <button type="button" class="dialog_header_btn" onclick="closeDialog('dialogProject-six')"
+                        autofocus></button>
                 </div>
                 <div class="dialog_content">
-                    <h4 class="dialog_title_1">Human Front Aid 6</h4>
-                    <h5 class="dialog_title_2">What is it?</h5>
-                    <p class="dialog_p">Here, .</p>
-                    <h5 class="dialog_title_2">When I did it?</h5>
-                    <p class="dialog_p">Here, .</p>
-                    <h5 class="dialog_title_2">What was my role?</h5>
-                    <p class="dialog_p">Here, .</p>
+                    <h4 class="dialog_title_1">Human Front Aid</h4>
+                    <p class="dialog_p">This website is currently being developed for the Human Front Aid foundation in
+                        Ukraine, backed by the InkuA foundation, where I am actively contributing as a developer. The
+                        project, which is still under construction, aims to provide multifaceted support amidst the
+                        armed conflict, utilizing HTML, CSS, JavaScript, and responsive design to ensure both
+                        accessibility and functionality.</p>
+                    <p class="dialog_p">My role in this collaborative effort has been pivotal, working alongside the
+                        design team to conceptualize and develop a platform that is not only intuitive and easy to
+                        navigate but also facilitates access to humanitarian assistance. Through the use of fundamental
+                        web technologies and responsive design practices, we are creating a digital solution that hopes
+                        to be a valuable resource for the coordination and distribution of aid in Ukraine.</p>
                 </div>
             </dialog>
             <!-- Card Projects Dialogs Finish -->
