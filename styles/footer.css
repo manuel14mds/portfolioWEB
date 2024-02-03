@@ -63,12 +63,13 @@ form textarea:focus{
 form .send_btn{
     background-color: var(--color-4);
     color: var(--color-1);
-    width: 100px;
+    width: 110px;
     height: 40px;
     border-radius: 5px;
     border-color: transparent ;
 }
 form .send_btn:hover{
+    cursor: pointer;
     background-color: var(--color-5);
     border: 1px solid var(--color-4);
     color: var(--color-4);
@@ -104,6 +105,7 @@ form .send_btn:hover{
     padding: 5px 10px;
 }
 .social_container .email .copy_btn:hover{
+    cursor: pointer;
     background-color: var(--color-5);
     color: var(--color-4);
 }
@@ -123,6 +125,7 @@ form .send_btn:hover{
     color: var(--color-4);
 }
 .social_container .github:hover{
+    cursor: pointer;
     transform: scale(1.05);
 }
 .social_container .github .github_logo{
@@ -143,6 +146,7 @@ form .send_btn:hover{
     color: var(--color-4);
 }
 .social_container .linkedin:hover{
+    cursor: pointer;
     transform: scale(1.05);
 }
 .social_container .linkedin .linkedin_logo{
@@ -163,6 +167,7 @@ form .send_btn:hover{
     animation: pulse 4s infinite ease-in-out;
 }
 .social_container .see_resume:hover{
+    cursor: pointer;
     border: 2px solid var(--color-4);
     animation-play-state: paused;
 }
