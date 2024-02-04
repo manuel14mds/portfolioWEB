@@ -109,12 +109,13 @@
 
 .nav_resume_btn{
     background-color: var(--color-2);
-    width: fit-content;
+    width: 100%;
     padding: 7px 15px;
     border: 0px solid transparent;
     border-radius: 5px;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 5px;
 }
 .nav_resume_btn:hover{
