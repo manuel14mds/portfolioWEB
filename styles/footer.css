@@ -187,13 +187,14 @@ form .send_btn:hover{
 }
 .footer h4{
     font-size: 2rem;
+    font-family: var(--font-title);
 }
 @media (min-width: 601px) {
     footer{
-        background-image: url('../SVG/helmet.svg');
+        /* background-image: url('../SVG/helmet.svg');
         background-position: right;
-        background-size: 50%;
-        background-repeat: no-repeat;
+        background-size: clamp(10%, 50%, 800px);
+        background-repeat: no-repeat; */
     }
     .contact{
         grid-template-columns: repeat(12, 1fr);
@@ -204,6 +205,11 @@ form .send_btn:hover{
     }
     .social_container{
         grid-column: 8/13;
+
+        background-image: url('../SVG/casco.svg');
+        background-position: center;
+        background-size: 95%;
+        background-repeat: no-repeat;
     }
     .social_container .see_resume{
         margin-top: 25px;

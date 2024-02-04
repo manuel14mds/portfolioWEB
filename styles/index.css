@@ -127,11 +127,11 @@ dialog::backdrop {
 
 .dialog_content .dialog_title_3 {
     font-family: var(--font-subtitle);
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .dialog_content .dialog_p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 200;
     padding: 0;
     margin: 0 0 10px 0;
@@ -140,7 +140,7 @@ dialog::backdrop {
 .dialog_content .dialog_a {
     color: white;
     font-style: italic;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .dialog_content .dialog_a:visited {
@@ -197,7 +197,7 @@ dialog::backdrop {
     }
 
     dialog {
-        width: 500px;
+        width: 550px;
     }
 
     .dialog_content .dialog_title_1 {
